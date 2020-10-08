@@ -6,7 +6,7 @@
 - 🔭 Software Engineer at [Webmasters Fernakademie](https://www.webmasters-fernakademie.de/)
 - ✍️ Author of [Einstieg in Laravel](https://www.webmasters-fernakademie.de/fernlehrgaenge/zertifizierter-php-entwickler.html), [Laravel für Fortgeschrittene](https://www.webmasters-fernakademie.de/fernlehrgaenge/zertifizierter-php-entwickler.html), [Test Driven Laravel](https://www.webmasters-fernakademie.de/fernlehrgaenge/zertifizierter-php-entwickler.html), and more.
 - 🚀 Creator of [Swim To Go](https://swimtogoapp.de/)
-- ❤️  Close relationship with the [Laravel](laravel.com) community.
+- ❤️  Close relationship with the [Laravel](https://laravel.com) community.
 - 📚 I’m currently learning Dart & exercising Kata's
 - 💬 Ask me about anything
 - 📫 How to reach me: <img alt="Twitter URL" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2Fniclaskahlmeier">
