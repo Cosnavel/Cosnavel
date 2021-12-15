@@ -4,7 +4,7 @@
 (ʘ‿ʘ)╯
 
 - 🔭 Software Engineer at [Webmasters Fernakademie](https://www.webmasters-fernakademie.de/)
-- ✍️ Author of [Einstieg in Laravel](https://www.webmasters-fernakademie.de/fernlehrgaenge/zertifizierter-php-entwickler.html), [Laravel für Fortgeschrittene](https://www.webmasters-fernakademie.de/fernlehrgaenge/zertifizierter-php-entwickler.html), [Test Driven Laravel](https://www.webmasters-fernakademie.de/fernlehrgaenge/zertifizierter-php-entwickler.html), and more.
+- ✍️ Author of [Einstieg in Laravel](https://www.webmasters-fernakademie.de/weiterbildung/php-laravel), [Laravel für Fortgeschrittene](https://www.webmasters-fernakademie.de/weiterbildung/php-laravel), [Test Driven Laravel](https://www.webmasters-fernakademie.de/weiterbildung/php-laravel), and more.
 - 🚀 Creator of [Swim To Go](https://swimtogoapp.de/)
 - 📚 I’m currently learning Dart & exercising Kata's
 - 💬 Ask me about anything
