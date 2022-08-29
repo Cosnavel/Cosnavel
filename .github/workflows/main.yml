@@ -11,8 +11,10 @@ jobs:
 # You can reuse these steps if you want to have a profile page similar to mine.
   github-metrics-personal:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-
+    
       - name: Personal metrics
         uses: lowlighter/metrics@latest
         with:
