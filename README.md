@@ -1,4 +1,4 @@
-<img align="left" src="/metrics.svg">
+<!-- <img align="left" src="/metrics.svg"> -->
 
 (ʘ‿ʘ)╯
 
