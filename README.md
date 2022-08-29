@@ -1,9 +1,8 @@
-<img align="left" src="https://github.com/Cosnavel/Cosnavel/blob/master/metrics.svg">
-<!-- <a href="https://github.com/cosnavel"><img alt="Git Stats" src="https://github-readme-stats.vercel.app/api?username=cosnavel&show_icons=true" align="right" height="150" /></a> -->
+<img align="left" src="/metrics.svg">
 
 (ʘ‿ʘ)╯
 
-- 🔭 Software Engineer at [Webmasters Fernakademie](https://www.webmasters-fernakademie.de/)
+- 🔭 Senior Fullstack Software Engineer at [Kettner Edelmetalle](https://www.kettner-edelmetalle.de/)
 - ✍️ Author of [Einstieg in Laravel](https://www.webmasters-fernakademie.de/weiterbildung/php-laravel), [Laravel für Fortgeschrittene](https://www.webmasters-fernakademie.de/weiterbildung/php-laravel), [Test Driven Laravel](https://www.webmasters-fernakademie.de/weiterbildung/php-laravel), and more.
 - 🚀 Creator of [Swim To Go](https://swimtogoapp.de/)
 - 📚 I’m currently learning Dart & exercising Kata's
@@ -11,12 +10,3 @@
 - 📫 How to reach me: <img alt="Twitter URL" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2Fniclaskahlmeier">
 - 😄 Pronouns: ♂
 - ⚡ Fun fact: I love c[_]
-- [◖ᵔᴥᵔ◗ ♪ ♫ ](https://soundcloud.com/freemusicforvlogs/sets/travel-vlog-music)
-
-<!--
-<img width="20%" align="right" src="https://www.dropbox.com/s/4n76o1mk5mc4qov/frontend-designer.png?raw=1"/>
-
-<!--[![Cosnavels's github stats](https://github-readme-stats.vercel.app/api?username=cosnavel)](https://github.com/anuraghazra/github-readme-stats)-->
-<!--[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=cosnavel&layout=compact)](https://github.com/anuraghazra/github-readme-stats)-->
-
-
