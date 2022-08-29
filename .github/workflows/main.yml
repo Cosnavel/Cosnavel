@@ -21,11 +21,7 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: "header, repositories"
           #plugin_followup: yes
-          plugin_music: yes
-          plugin_music_limit: 4
-          plugin_music_provider: spotify
-          plugin_music_mode: playlist
-          plugin_music_playlist: https://open.spotify.com/embed/playlist/7w33zSxzXN5blasm8mk6cc
+          #plugin_music: no
           plugins_errors_fatal: yes
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
