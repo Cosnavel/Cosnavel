@@ -8,5 +8,4 @@
 - 📚 I’m currently learning Dart & exercising Kata's
 - 💬 Ask me about anything
 - 📫 How to reach me: <img alt="Twitter URL" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2Fniclaskahlmeier">
-- 😄 Pronouns: ♂
 - ⚡ Fun fact: I love c[_]
