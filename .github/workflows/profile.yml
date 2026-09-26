@@ -41,7 +41,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: show_icons=true&show=contributions,prs_merged&hide=commits,contribs&rank_icon=github&custom_title=GitHub%20Stats&number_format=short&number_precision=1&line_height=27&${{ env.CARD_THEME }}
+          options: show_icons=true&show=contributions,prs_merged&hide=commits,contribs&rank_icon=github&custom_title=GitHub%20Stats&number_format=short&line_height=27&${{ env.CARD_THEME }}
           path: dist/stats.svg
           token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
           fail_on_error: true
