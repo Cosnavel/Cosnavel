@@ -1,0 +1,11 @@
+{
+  "name": "cosnavel-profile-assets",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "opentype.js": "^2.0.0"
+  }
+}

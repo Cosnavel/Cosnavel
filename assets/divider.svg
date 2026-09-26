@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="24" viewBox="0 0 1200 24" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">Divider</title>
+<desc id="desc">A thin gold line</desc>
+<defs>
+<linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8F6A31" stop-opacity="0"/><stop offset="0.5" stop-color="#CFB075" stop-opacity="0.9"/><stop offset="1" stop-color="#8F6A31" stop-opacity="0"/></linearGradient>
+<radialGradient id="glint"><stop offset="0" stop-color="#F3E1B8"/><stop offset="1" stop-color="#F3E1B8" stop-opacity="0"/></radialGradient></defs>
+<rect y="11.5" width="1200" height="1" fill="url(#line)"/>
+<path d="M600 4l8 8l-8 8l-8-8Z" stroke="#CFB075" stroke-opacity="0.7"/>
+<path d="M600 8.5l3.5 3.5l-3.5 3.5l-3.5-3.5Z" fill="#F3E1B8"/>
+<circle cx="0" cy="12" r="10" fill="url(#glint)" opacity="0">
+<animate attributeName="cx" values="120;1080" dur="7s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.2;0.8;1" dur="7s" repeatCount="indefinite"/>
+</circle>
+</svg>
