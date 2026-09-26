@@ -1,0 +1,90 @@
+name: Profile cards
+
+on:
+  schedule:
+    - cron: "23 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - .github/workflows/profile.yml
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: true
+
+env:
+  CARD_THEME: bg_color=90,131315,08080A&title_color=E7CC93&text_color=C9D1D9&icon_color=CFB075&ring_color=CFB075&border_color=6B5530&border_radius=16
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # A few huge days push almost every other day into the lowest contribution
+      # level, so level 1 already needs a clearly visible gold.
+      - name: Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark&color_snake=#FFF1CC&color_dots=#161b22,#8a6a33,#b08c55,#d4b77c,#f3e1b8
+            dist/snake-light.svg?palette=github-light&color_snake=#5C4318&color_dots=#ebedf0,#d9bd85,#c09c5f,#a38252,#7a5a28
+
+      # STATS_TOKEN (optional): a PAT with read access to private repos, so commits
+      # and languages from private work show up too. Falls back to public data.
+      - name: Stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: show_icons=true&show=contributions,prs_merged&hide=commits,contribs&rank_icon=github&custom_title=GitHub%20Stats&number_format=short&number_precision=1&line_height=27&${{ env.CARD_THEME }}
+          path: dist/stats.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: layout=compact&langs_count=6&hide=html,css&card_width=320&${{ env.CARD_THEME }}
+          path: dist/top-langs.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Pin laravel-query-localization
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: repo=laravel-query-localization&description_lines_count=2&${{ env.CARD_THEME }}
+          path: dist/pin-laravel-query-localization.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Pin laravel-rocketchat
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: repo=laravel-rocketchat&description_lines_count=2&${{ env.CARD_THEME }}
+          path: dist/pin-laravel-rocketchat.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      # Force-pushed without history, so the daily images never bloat the repo.
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v5
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: Update profile cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # GitHub disables scheduled workflows after 60 days without repo activity.
+      - name: Keep the schedule enabled
+        run: gh api -X PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/profile.yml/enable"
+        env:
+          GH_TOKEN: ${{ github.token }}
