@@ -107,7 +107,6 @@ My path wasn't exactly traditional. After working for startups during high schoo
 
 <p align="center">
   <a href="https://github.com/Cosnavel/laravel-query-localization"><img src="https://raw.githubusercontent.com/Cosnavel/Cosnavel/output/pin-laravel-query-localization.svg" alt="laravel-query-localization"></a>
-  <a href="https://github.com/Cosnavel/laravel-rocketchat"><img src="https://raw.githubusercontent.com/Cosnavel/Cosnavel/output/pin-laravel-rocketchat.svg" alt="laravel-rocketchat"></a>
 </p>
 
 ✍️ I also wrote the Laravel courses **Einstieg in Laravel**, **Laravel für Fortgeschrittene** and **Test Driven Laravel** for the [Webmasters Fernakademie](https://www.webmasters-fernakademie.de/weiterbildung/php-laravel).

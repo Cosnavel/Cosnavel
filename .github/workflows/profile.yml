@@ -64,15 +64,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 
-      - name: Pin laravel-rocketchat
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: pin
-          options: repo=laravel-rocketchat&description_lines_count=2&${{ env.CARD_THEME }}
-          path: dist/pin-laravel-rocketchat.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
-
       # Force-pushed without history, so the daily images never bloat the repo.
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v5
